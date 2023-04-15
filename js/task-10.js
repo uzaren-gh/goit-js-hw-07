@@ -26,7 +26,7 @@ function createBoxes(amount) {
   let heigth = 20;
   for (let i = 1; i <= amount; i += 1) {
     markup = markup.concat(
-      `<div class = "gallery";  style="background-color:${getRandomHexColor()}; width: ${(width += 10)}px; height: ${(heigth += 10)}px; margin: 2px 2px 2px 2px; border-style: double" ></div>`
+      `<div class="gallery" style="background-color:${getRandomHexColor()}; width: ${(width += 10)}px; height: ${(heigth += 10)}px; margin: 2px 2px 2px 2px; border-style: double" ></div>`
     );
   }
 
@@ -35,4 +35,5 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   divBox.innerHTML = "";
+  inputField.value = null;
 }
