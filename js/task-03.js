@@ -19,14 +19,17 @@ const images = [
 
 // let fragment = document.createDocumentFragment();
 
-// images.forEach(({url,alt}) => {
-//   let li = document.createElement('li');
-//   li.className = "flex-cell"
-//   li.insertAdjacen+tHTML("afterBegin", `<img src=${url} alt=${alt} width="252" height="150">`)
+// images.forEach(({ url, alt }) => {
+//   let li = document.createElement("li");
+//   li.className = "flex-cell";
+//   li.insertAdjacentHTML(
+//     "afterBegin",
+//     `<img src=${url} alt=${alt} width="252" height="150">`
+//   );
 //   fragment.appendChild(li);
-// })
+// });
 
-// gallery.appendChild(fragment);  //В DOM вставляется за одно действие.
+// gallery.appendChild(fragment); //В DOM вставляется за одно действие.
 
 //Вариант 2. После занятия с ментором.
 

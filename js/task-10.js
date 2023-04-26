@@ -20,11 +20,11 @@ function createBoxes(amount) {
     return;
   }
   let markup = "";
-  let width = 20;
-  let heigth = 20;
+  let size = 20;
+  // let heigth = 20;
   for (let i = 1; i <= amount; i += 1) {
     markup = markup.concat(
-      `<div class="gallery" style="background-color:${getRandomHexColor()}; width: ${(width += 10)}px; height: ${(heigth += 10)}px; margin: 2px 2px 2px 2px; border-style: double" ></div>`
+      `<div class="gallery" style="background-color:${getRandomHexColor()}; width: ${(size += 10)}px; height: ${(size += 10)}px; margin: 2px 2px 2px 2px; border-style: double" ></div>`
     );
   }
 
